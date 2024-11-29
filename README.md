@@ -18,7 +18,7 @@ npm install mongodb
 const { MongoClient, ServerApiVersion } = require('mongodb');
 
 // create variable uri contain string for connect to mongo db. this string format will provide by mongo
-const uri = "mongodb+srv://fachrialfirman15:Kc2rguzc4GEYE2C0@cluster0.0yd10qz.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://<username>:<password>@<url>/<db>?retryWrites=true&w=majority";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -46,7 +46,7 @@ async function run() {
 // Run function run()
 run().catch(console.dir);
 ```
-5. Install mongoose moadule for accessing cloud mongodb Atlas. mongoose is mongodb object modelling for node.js
+5. Install mongoose module for accessing cloud mongodb Atlas. mongoose is mongodb object modelling for node.js
 ```
 npm install mongoose
 ```
@@ -56,7 +56,7 @@ npm install mongoose
 const mongoose = require('mongoose');
 
 // create variable uri contain string for connect to mongo db. this string format will provide by mongo
-const uri = "mongodb+srv://fachrialfirman15:Kc2rguzc4GEYE2C0@cluster0.0yd10qz.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://<username>:<password>@<url>/<db>?retryWrites=true&w=majority";
 
 // Connect to db using Mongoose
 mongoose.connect(uri)
